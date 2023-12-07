@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parcel Sandbox</title>
+		<meta charset="UTF-8" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link href="src/styles.css" rel="stylesheet"> -->
+		<style>
+			/* mini reset */
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #333333;
+			}
+            main{
+                display: flex;
+                gap: 1rem;
+            }
+			/* Table */
+			table {
+				border-spacing: 10px;
+				border-collapse: separate;
+			}
+			td {
+				width: 46px;
+				height: 46px;
+			}
+			/* td:hover {
+            cursor: pointer;
+            border-radius: 100%;
+            background-color: #fb3f4a;
+            color: #ffffff;
+            }
+            td:active td:focus {
+            background-color: #fb3f4a;
+            color: #ffffff;
+            } */
+			/**
+            ** Tachyon-like css system.  
+            **/
+			/* Colors */
+			.black {
+				color: #333333;
+			}
+			.light-grey {
+				color: #666666;
+			}
+
+			/* Type Scale:
+            *  .f = font-size
+            *  .f1 = 6rem (96px)
+            *  .f2 = 5rem (80px)
+            *  .f3 = 3rem (48px)
+            *  .f4 = 2.25rem (36px)
+            *  .f5 = 1.5rem (24px)
+            *  .f6 = 1.25rem (20px)
+            *  .f7 = 1rem (16px)
+            *  .f8 = .875rem (14px) 
+            */
+			.f5 {
+				font-size: 1.5em;
+			}
+			/* Typography */
+
+			.inter-font-family {
+				font-family: "Inter", sans-serif;
+			}
+			.text-bold {
+				font-weight: 700;
+			}
+			.text-normal {
+				font-weight: 500;
+			}
+			.text-center {
+				text-align: center;
+			}
+			/* Display */
+			.flex {
+				display: flex;
+			}
+			.flex-column {
+				flex-direction: column;
+			}
+			.flex-row {
+				flex-direction: row;
+			}
+			.justify-center {
+				justify-content: center;
+			}
+			.justify-between {
+				justify-content: space-between;
+			}
+			.center-items {
+				align-items: center;
+			}
+			/* Widths */
+			.w-100 {
+				width: 100%;
+			}
+			/* Heights */
+			.h-100 {
+				height: 100vh;
+			}
+			/* Margins */
+			.ma-0 {
+				margin: 0;
+			}
+			.ma-auto {
+				margin: 0 auto;
+			}
+			/* Paddings */
+			.pa-0 {
+				padding: 0;
+			}
+
+			/* Compoments */
+			.calendar-card {
+				padding: 1.152em;
+				position: relative;
+				width: 560px;
+				height: 563px;
+				background: #ffffff;
+				border: 1px solid #ebebeb;
+				box-sizing: border-box;
+				box-shadow: 0px 4px 32px rgba(170, 170, 170, 0.05);
+				border-radius: 12px;
+			}
+
+			.calendar-card-header {
+				width: 27.3125em;
+				height: 1.8125em;
+				margin: 0 0 56px 0;
+				padding: 0 20px;
+			}
+
+			.calendar-card-header-selectors {
+				display: inline-flex;
+				margin: 0 10px 0 0;
+			}
+
+			.calendar-card-header-left-arrow,
+			.calendar-card-header-right-arrow {
+				height: 1em;
+				width: 1em;
+				padding: 0.75em;
+				margin: 0;
+				padding: 0 8px 0 0;
+			}
+			.calendar-card-header-left-arrow:hover,
+			.calendar-card-header-right-arrow:hover {
+				cursor: pointer;
+				border-radius: 5px;
+				background-color: #fb3f4a;
+				color: #ffffff;
+			}
+			/* .calendar-card-header-left-arrow > svg:hover {
+            margin: 1em;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 100%;
+            background-color: #fb3f4a;
+            color: #ffffff;
+            } */
+
+			.calendar-card-header-right-arrow {
+				margin: 0;
+				padding: 0 8px 0 0;
+			}
+
+			.calendar-card-table {
+				width: 416px;
+				height: 334px;
+			}
+			.calendar-card-day:hover {
+				cursor: pointer;
+				border-radius: 100%;
+				background-color: #fb3f4a;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+
+	<body
+		class="flex justify-center center-items inter-font-family w-100 h-100 ma-0 pa-0"
+	>
+		<main class="ma-auto">
+			<div class="flex flex-column justify-center center-items calendar-card">
+				<div
+					class="flex flex-row justify-between center-items calendar-card-header"
+				>
+					<h1 class="f5 ma-0 pa-0 black text-bold">August 2020</h1>
+					<div class="calendar-card-header-selectors">
+						<div class="calendar-card-header-left-arrow">
+							<svg
+								width="15"
+								height="15"
+								viewBox="0 0 15 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M7.59802 2.00001L1.94116 7.65686L7.59802 13.3137"
+									stroke="#333333"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="calendar-card-header-right-arrow">
+							<svg
+								width="15"
+								height="15"
+								viewBox="0 0 15 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M7.91175 2.00001L13.5686 7.65686L7.91175 13.3137"
+									stroke="#333333"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div>
+					<table class="calendar-card-table text-center">
+						<tr class="black calendar-days">
+							<th>Su</th>
+							<th>Mo</th>
+							<th>Tu</th>
+							<th>We</th>
+							<th>Th</th>
+							<th>Fr</th>
+							<th>Sa</th>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="flex flex-column justify-center center-items calendar-card">
+				<div
+					class="flex flex-row justify-between center-items calendar-card-header"
+				>
+					<h1 class="f5 ma-0 pa-0 black text-bold">August 2020</h1>
+					<div class="calendar-card-header-selectors">
+						<div class="calendar-card-header-left-arrow">
+							<svg
+								width="15"
+								height="15"
+								viewBox="0 0 15 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M7.59802 2.00001L1.94116 7.65686L7.59802 13.3137"
+									stroke="#333333"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="calendar-card-header-right-arrow">
+							<svg
+								width="15"
+								height="15"
+								viewBox="0 0 15 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M7.91175 2.00001L13.5686 7.65686L7.91175 13.3137"
+									stroke="#333333"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div>
+					<table class="calendar-card-table text-center">
+						<tr class="black calendar-days">
+							<th>Su</th>
+							<th>Mo</th>
+							<th>Tu</th>
+							<th>We</th>
+							<th>Th</th>
+							<th>Fr</th>
+							<th>Sa</th>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+						</tr>
+						<tr class="light-grey text-normal">
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- <script src="src/index.js"></script>  -->
+	</body>
+</html>

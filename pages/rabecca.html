@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
+
+			.navbar {
+				background-color: #ffffff;
+				overflow: hidden;
+				border-bottom: 1px solid #ccc; /* Horizontal line break */
+			}
+
+			.navbar a {
+				float: left;
+				display: block;
+				color: #333;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			.navbar a:hover {
+				background-color: #f1f1f1;
+			}
+
+			.dropdown {
+				float: left;
+				overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+				font-size: 16px;
+				border: none;
+				outline: none;
+				color: #333;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.navbar a,
+			.dropdown .dropbtn {
+				display: inline-block;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #ffffff;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(49, 49, 49, 0.2);
+				z-index: 1;
+				padding: 0%;
+				border-radius: 12px;
+			}
+
+			.dropdown-content a {
+				float: none;
+				color: #333;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+			.dropdown-content a:hover {
+				background-color: #ddd;
+			}
+
+			.font {
+				background-color: rgb(231, 20, 55);
+				display: inline;
+				color: #ffffff;
+				border-radius: 3px;
+				padding: 4px;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+
+			.images {
+				flex-direction: column;
+				direction: ltr;
+				padding: 2px;
+				border-radius: 3px;
+				box-shadow: 0px 8px 16px 0px rgba(24, 23, 23, 0.2);
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<div class="dropdown">
+				<a href="#" class="dropbtn"> <i class="fa fa-user"></i></a>
+				<div class="images">
+					<div class="menubar">
+						<img
+							id="menu"
+							src="https://img.icons8.com/?size=26&id=3095&format=png"
+							alt="menu"
+						/>
+					</div>
+					<div class="profile">
+						<img
+							id="profile-icon"
+							src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/profle-256.png"
+							alt="profile-icon"
+						/>
+					</div>
+				</div>
+				<div class="dropdown-content">
+					<strong
+						><a href="#"
+							>Winter Release Features
+							<div class="font">NEW</div></a
+						></strong
+					>
+					<hr />
+					<strong><a href="#">Sign Up</a></strong>
+					<a href="#">Log In</a>
+					<hr />
+					<a href="#">Gift cards</a>
+					<a href="#">Airbnb your home</a>
+					<a href="#">Help Center</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
