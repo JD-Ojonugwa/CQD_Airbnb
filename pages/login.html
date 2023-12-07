@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c83b3452e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="signup">
+      <div class="container">
+        <h2 id="login">Log in or sign up</h2>
+        <div class="box">
+          <h2>Welcome to Airbnb</h2>
+          <form action="/submit" method="post">
+            <div class="label">
+              <label for="country/region">Country/Region</label>
+              <select id="country" name="country">
+                <option value="afganistan">Afganistan (+93)</option>
+                <option value="albania">Albania (+355)</option>
+                <option value="botswana">Botswana (+267)</option>
+                <option value="cameroon">Cameroon (+237)</option>
+                <option value="canada">Canada (+1)</option>
+                <option value="egypt">Egypt (+20)</option>
+                <option value="ethiopia">Ethiopia (+251)</option>
+                <option value="gambia">Gambia (+220)</option>
+                <option value="ghana">Ghana (+233)</option>
+                <option value="kenya">Kenya (+254)</option>
+                <option value="madagaster">Madagaster (+261)</option>
+                <option value="jamaica">Jamaica (+1)</option>
+                <option value="niger">Niger (+227)</option>
+                <option value="nigeria">Nigeria (+234)</option>
+                <option value="south africa">South Africa (+27)</option>
+                <option value="uganda">Uganda (+256)</option>
+                <option value="united kingdom">United Kingdom (+44)</option>
+                <option value="united states">United States (+1)</option>
+                <option value="zambia">Zambia (+260)</option>
+                <option value="zimbabwe">Zimbabwe (+263)</option>
+              </select>
+              <hr />
+              <input
+                type="tel"
+                id="number"
+                name="phone number"
+                placeholder="phone number"
+                required
+              />
+            </div>
+            <p>
+              We’ll call or text you to confirm your number. Standard message
+              and data rates apply. <a href="">privacy Policy</a>
+            </p>
+            <button type="submit">Continue</button>
+          </form>
+
+          <br />
+          <hr />
+          <div class="social">
+            <div class="con">
+              <i class="fa-brands fa-square-facebook"></i>
+              <p>Continue with Facebook</p>
+            </div>
+            <div class="con">
+              <div class="google">
+                <img
+                  src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                  alt=""
+                />
+              </div>
+              <p>Continue with Google</p>
+            </div>
+            <div class="con">
+              <i class="fa-brands fa-apple"></i>
+              <p>Continue with Apple</p>
+            </div>
+            <div class="con">
+              <i class="fa-regular fa-envelope"></i>
+              <p>Continue with Email</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
