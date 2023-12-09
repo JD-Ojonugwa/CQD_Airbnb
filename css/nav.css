@@ -1,0 +1,161 @@
+nav {
+	width: 90%;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 1rem;
+	position: relative;
+}
+nav .img-div {
+	color: #ff385c;
+}
+#mobile-logo {
+	display: none;
+}
+#desktop-logo {
+	display: block;
+}
+nav .red-box {
+	display: flex;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+nav a {
+	text-decoration: none;
+}
+nav .box-2 {
+	border: 1px solid lightgray;
+	padding: 7px;
+	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+nav .box-2:hover {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+nav .box-2 a {
+	padding-inline: 15px;
+	color: #222;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+#add-guests {
+	color: #717171;
+}
+nav #middle {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+.fa-magnifying-glass {
+	color: white;
+	background-color: #ff385c;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 0.8rem;
+}
+nav .box-3 {
+	display: flex;
+	flex-shrink: 2;
+}
+
+nav #your-home {
+	padding: 10px 15px;
+}
+nav .box-3 a {
+	font-size: 0.9rem;
+	color: #222;
+	font-weight: 500;
+}
+
+nav #your-home:hover {
+	background-color: #f7f7f7;
+	border-radius: 25px;
+}
+nav #globe {
+	width: 40px;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+#globe span {
+	font-size: 1.2rem;
+}
+
+nav #globe:hover {
+	background-color: #f7f7f7;
+	border-radius: 50%;
+}
+
+nav #menu-box {
+	padding: 7px 13px;
+	gap: 10px;
+	border: 1px solid lightgray;
+	justify-content: center;
+	border-radius: 25px;
+}
+nav #menu-box:hover {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+nav #menu {
+	width: 1rem;
+}
+
+nav #profile-icon {
+	width: 30px;
+}
+img {
+	width: 100%;
+}
+header hr {
+	margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	#desktop-logo {
+		display: none;
+	}
+	#mobile-logo {
+		display: block;
+	}
+	nav .box-2 {
+		left: 10%;
+		transform: translateX(-10%);
+	}
+}
+
+@media (max-width: 767px) {
+    #desktop-logo {
+		display: none;
+	}
+	#mobile-logo {
+		display: block;
+	}
+    /* nav {
+        height: 20vh;
+    } */
+	nav .box-2 {
+		/* left: 50%;
+        top: 100%;
+		transform: translate(-50%, -100%);
+        text-wrap: nowrap; */
+        display: none;
+	}
+}
+@media (max-width: 425px){
+   nav #your-home, nav #globe {
+        display: none;
+    }
+}
