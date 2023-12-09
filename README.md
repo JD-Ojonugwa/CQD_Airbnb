@@ -19,7 +19,7 @@ Getting Started
 To clone this repository, run the following command:
 
 # Clone the repository
-git clone https://github.com/Tamarapreye-M/CQD_Ecommerce.git
+git clone https://github.com/Tamarapreye-M/CQD_Airbnb.git
 
 # Navigate to the project directory
 cd CQD_Ecommerce
