@@ -1,0 +1,64 @@
+.main-wrapper {
+	width: 90%;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+
+	grid-auto-flow: dense;
+	grid-auto-columns: minmax(260px, 1fr);
+}
+
+img {
+	width: 100%;
+	aspect-ratio: 1.1;
+	border-radius: 10px;
+}
+main .img-div {
+	position: relative;
+}
+
+main i {
+	position: absolute;
+}
+.fa-heart {
+	top: 30px;
+	right: 10px;
+	color: white;
+	background-color: transparent;
+	font-size: 30px;
+	z-index: 2;
+}
+.fa-solid.fa-heart {
+	color: rgba(62, 62, 62, 0.386);
+	z-index: 1;
+}
+main .fa-angle-right {
+	top: 50%;
+	right: 10px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 7px 10px;
+	visibility: hidden;
+	opacity: 0.9;
+}
+
+main .img-div:hover .fa-angle-right {
+	visibility: visible;
+}
+main .fa-angle-right:hover {
+	scale: 1.1;
+	opacity: 1;
+}
+.main-wrapper a {
+	text-decoration: none;
+}
+.main-wrapper h4 {
+	color: #222;
+	margin-top: 7px;
+	font-weight: 500;
+}
+.main-wrapper p {
+	color: #717171;
+	margin-top: 5px;
+}
