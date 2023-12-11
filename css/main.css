@@ -81,3 +81,16 @@ main .stars-div {
 	color: #717171;
 	margin-top: 5px;
 }
+
+@media screen and (max-width: 810px){
+	main .main-wrapper .card{
+		width: 100%;
+		padding-left: 50px;
+	}
+}
+
+@media screen and (max-width: 699px){
+	main .main-wrapper .card{
+		padding-right: 30px;
+	}
+}

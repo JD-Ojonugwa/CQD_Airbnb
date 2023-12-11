@@ -197,3 +197,11 @@ button {
     height: 1px;
     background-color: rgb(248, 247, 247);
 }
+
+@media screen and (max-width:550px){
+	.signup .container{
+		position: relative;
+		border-radius: 0;
+		height: 100%;
+	}
+}
