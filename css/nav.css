@@ -154,6 +154,7 @@ header hr {
         display: none;
 	}
 }
+
 @media (max-width: 425px){
    nav #your-home, nav #globe {
         display: none;
