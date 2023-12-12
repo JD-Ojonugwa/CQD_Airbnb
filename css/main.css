@@ -1,7 +1,7 @@
 main {
     position: relative;
     top: 30vh;
-    z-index: -1;
+    z-index: 1;
     
 }
 @media (max-width: 600px) {
@@ -46,17 +46,19 @@ main i {
 	color: rgba(62, 62, 62, 0.386);
 	z-index: 1;
 }
-main .fa-angle-right {
+.img-div .fa-angle-right {
 	top: 50%;
 	right: 10px;
+    z-index: 1;
 	background-color: white;
 	border-radius: 50%;
 	padding: 7px 10px;
 	visibility: hidden;
 	opacity: 0.9;
+    transition: scale 0.5s ease;
 }
 
-main .img-div:hover .fa-angle-right {
+.img-div:hover .fa-angle-right {
 	visibility: visible;
 }
 main .fa-angle-right:hover {
