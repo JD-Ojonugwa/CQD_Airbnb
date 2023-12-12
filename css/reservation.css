@@ -1,0 +1,84 @@
+#reserve-nav {
+	width: 75%;
+}
+.reserve-wrapper {
+	width: 75%;
+	margin-inline: auto;
+}
+
+.reserve-wrapper .heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+   margin-block: 1rem;
+}
+.heading a, .share-div {
+    display: flex;
+    gap: 5px;
+}
+
+.share-div a  {
+    text-decoration: none;
+    display: flex;
+	align-items: flex-start;
+    color: #222;
+
+}
+.share-div p {
+    text-decoration: underline;
+}
+.grid-images {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 380px;
+}
+.grid-images div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-images :nth-child(1){
+    /* grid-area: 1 / 1 / span 2 / span 1; */
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url('https://a0.muscache.com/im/pictures/dd8d7c26-ab53-439b-bd93-77213d8d5156.jpg?im_w=1200');
+    
+}
+.grid-images :nth-child(2){
+    /* grid-area: 1 / 1 / span 2 / span 1; */
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url("https://a0.muscache.com/im/pictures/19e967a1-6698-40ab-85d5-246b7b20fc34.jpg?im_w=720");
+}
+.grid-images :nth-child(3){
+    /* grid-area: 1 / 1 / span 2 / span 1; */
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url('https://a0.muscache.com/im/pictures/89b220eb-a8ce-48e1-8a43-d953220f4a6a.jpg?im_w=720');
+}
+.grid-images :nth-child(4){
+    /* grid-area: 1 / 1 / span 2 / span 1; */
+    grid-column: 3/4;
+    grid-row: 2/3;
+      background-image: url('https://a0.muscache.com/im/pictures/9a4465e4-7a1f-4040-bf3f-0587ce20eccf.jpg?im_w=720');
+}
+.grid-images :nth-child(5){
+    /* grid-area: 1 / 1 / span 2 / span 1; */
+    grid-column: 4/5;
+    grid-row: 2/3;
+      background-image: url('https://a0.muscache.com/im/pictures/ea5c91c1-f26b-4349-b5b1-8e9676f3ab23.jpg?im_w=720');
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec-2 {
+    display: flex;
+}
