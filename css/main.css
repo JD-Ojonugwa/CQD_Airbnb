@@ -2,6 +2,13 @@ main {
     position: relative;
     top: 30vh;
     z-index: -1;
+    
+}
+@media (max-width: 600px) {
+    main {
+        top: 40vh;
+    }
+
 }
 .main-wrapper {
 	width: 90%;

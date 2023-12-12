@@ -19,8 +19,8 @@ img {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	
 	height: 13vh;
+	background-color: white;
 	
 }
 
@@ -205,7 +205,7 @@ img {
 	.nav-section{
 		display: flex;
 		flex-direction: column;
-		height: 20vh;
+		height: 22vh;
 	}
 	.first-nav-div {
 		max-width: 90vw;

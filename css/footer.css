@@ -4,7 +4,12 @@ footer {
 	color: #222;
 	font-weight: 500;
 	position: relative;
-	top: 30vh;
+	top: 40vh;
+}
+@media (max-width: 600px) {
+	main {
+		top: 60vh;
+	}
 }
 .footer-wrapper {
 	width: 90%;
@@ -19,6 +24,14 @@ footer {
 	font-weight: 500;
 	color: #717171;
 	border-bottom: 1px solid #717171;
+	text-wrap: nowrap;
+	max-width: 80vw;
+	overflow-x: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+}
+.popular::-webkit-scrollbar {
+	display: none;
 }
 
 .popular :first-child {
@@ -29,8 +42,10 @@ footer {
 
 .footer-sec-1 {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	/* grid-template-columns: repeat(6, 1fr); */
 	row-gap: 2rem;
+	position: relative;
 }
 
 .footer-sec-1 h6 {
@@ -70,6 +85,89 @@ hr {
 	background-color: #717171;
 	margin-top: 2rem;
 }
+/* .show-more {
+	position: relative;
+} */
+input.show-more {
+	position: absolute;
+	bottom: 3px;
+	right: 9%;
+	width: 7.3%;
+	height: 20px;
+	transform: translate(-9%, -3px);
+	cursor: pointer;
+	opacity: 0;
+
+}
+.show {
+	display: flex;
+	
+	
+	align-items: center;
+}
+.hide-this {
+	display: none;
+}
+.show-more:checked  ~ .hide-this{
+	display: block;
+
+}
+.show-more:checked  + .show {
+	display: none;
+}
+
+
+.last-footer-sec {
+	border-top: 1px solid lightgray;
+	margin: 1rem;
+	margin-left: 0;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.last-footer-sec .first {
+	display: flex;
+	gap: 1.5rem;
+	font-size: 0.8rem;
+}
+.last-footer-sec .first ul {
+	display: flex;
+	gap: 1.5rem;
+}
+/* .last-footer-sec .first li::before {
+	width: 1px;
+	background-color: red;
+} */
+.last-footer-sec svg {
+	margin-right: 1px;
+}
+
+.last-footer-sec a {
+	color: #222;
+}
+
+.last-footer-sec .other  {
+display: flex;
+gap: 1rem;
+}
+#other {
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+.other a {
+	text-decoration: none;
+}
+.other a span {
+	text-decoration: underline;
+}
+
+.other i {
+	font-size: 1.3rem;
+	margin-right: 10px;
+}
+
 
 @media screen and (max-width: 890px) {
 	.footer-wrapper h2 {
@@ -78,19 +176,10 @@ hr {
 	.footer-wrapper .popular {
 		display: flex;
 		/* flex-wrap: wrap; */
-		text-wrap: nowrap;
-		max-width: 80vw;
-		overflow-x: scroll;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none;
+
 		padding-bottom: 20px;
 		font-size: 0.95rem;
 	}
-	.footer-wrapper .popular::-webkit-scrollbar{
-		display: none;
-	}
-	
-	
 }
 
 @media screen and (max-width: 500px) {
@@ -102,5 +191,12 @@ hr {
 	}
 	.footer-sec-2 div h6 {
 		color: red;
+	}
+
+	.last-footer-sec, .first {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		column-gap: 5px;
 	}
 }

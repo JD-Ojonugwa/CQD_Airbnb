@@ -4,12 +4,16 @@ Introduction Code Queen Dynasty General Month 2 project! Design/re-create an Air
 
 HTML CSS CSS Flexbox The contributing group members are:
 
-Tamarapreye Michael
-Joy Abel
-Queen-Ann Asuquo
-Oluwatobiloba Bakare 
-Rabecca Muasya 
-Ooreofe Lawanson
++ Tamarapreye Michael
++ Joy Abel
++ Queen-Ann Asuquo
++ Oluwatobiloba Bakare 
++ Rabecca Muasya 
++ Ooreofe Lawanson
++ Sindiswa Toli
++ Winner 
++ Osezele
++ Taiwo Abdulsalam
 
 Getting Started To clone this repository, run the following command:
 
