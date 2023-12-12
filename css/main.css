@@ -1,6 +1,7 @@
 main {
     position: relative;
     top: 30vh;
+    z-index: -1;
 }
 .main-wrapper {
 	width: 90%;

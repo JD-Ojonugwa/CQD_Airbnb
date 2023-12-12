@@ -1,8 +1,8 @@
 footer {
-	background-color: #F7F7F7;
-    padding-block: 2rem;
-    color: #222;
-    font-weight: 500;
+	background-color: #f7f7f7;
+	padding-block: 2rem;
+	color: #222;
+	font-weight: 500;
 	position: relative;
 	top: 30vh;
 }
@@ -60,9 +60,9 @@ footer {
 .footer-sec-2 a {
 	display: block;
 	margin-top: 1rem;
-    color: #222;
-    text-decoration: none;
-    font-size: 0.9rem;
+	color: #222;
+	text-decoration: none;
+	font-size: 0.9rem;
 }
 
 hr {
@@ -71,37 +71,36 @@ hr {
 	margin-top: 2rem;
 }
 
-@media screen and (max-width: 890px){
-	.footer-wrapper h2{
-		font-size: .95rem;
+@media screen and (max-width: 890px) {
+	.footer-wrapper h2 {
+		font-size: 0.95rem;
 	}
-	.footer-wrapper .popular{
+	.footer-wrapper .popular {
 		display: flex;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
+		text-wrap: nowrap;
+		max-width: 80vw;
+		overflow-x: scroll;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none;
 		padding-bottom: 20px;
-		font-size: .95rem;
+		font-size: 0.95rem;
 	}
-	.footer-sec-1{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.footer-sec-1 h6{
-		padding: 10px;
-	}
-	.footer-sec-1 p{
+	.footer-wrapper .popular::-webkit-scrollbar{
 		display: none;
 	}
+	
+	
 }
 
-@media screen and (max-width: 500px){
-	.footer-sec-2{
+@media screen and (max-width: 500px) {
+	.footer-sec-2 {
 		display: block;
 	}
-	.footer-sec-2 div{
+	.footer-sec-2 div {
 		padding-bottom: 20px;
 	}
-	.footer-sec-2 div h6{
+	.footer-sec-2 div h6 {
 		color: red;
 	}
 }
-
